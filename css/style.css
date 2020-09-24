@@ -8,6 +8,11 @@ html, body {
   font-family: Open Sans, sans-serif;
 }
 
+.header-top {
+  display: flex;
+  justify-content: space-around;
+}
+
 h1 {
   text-transform: uppercase;
   color: #ffffff;
@@ -500,12 +505,7 @@ sup {
     position: relative;
     z-index: 1;
   }
-  
-  .header-top {
-    display: flex;
-    justify-content: space-around;
-  }
-  
+    
   .header-logo {
     display: block;
     width: 180px;
@@ -715,7 +715,7 @@ sup {
 
   .menu {
     display: none;
-  }
+  } 
 
   .main-trends {
     width: 100%;
@@ -825,7 +825,7 @@ sup {
     width: 91%;
     margin-left: 4.5%;
     margin-right: 4.5%; 
-    margin-top: 50px;    
+    margin-top: 50px;
   }
 }
 
@@ -856,26 +856,29 @@ sup {
   .header-wrap {
     position: relative;
     z-index: 1;
-    width: 75%;
+    height: 360px;
+    padding-top: 50%;
   }
 
   h1 {
-    width: 75%;
+    width: 81.8%;
     font-size: 26px;
     line-height: 36px;
     margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
   
   .header-top {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   
   .header-logo {
     display: block;
     width: 270px;
-    margin-top: 20%;
   }
 
   .menu {
