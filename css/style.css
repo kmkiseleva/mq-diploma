@@ -359,6 +359,24 @@ h1 {
   color: #b59f5b;
 }
 
+.button-submit:hover, .item-button:hover, .popup-submit-button:hover {
+  background-color: #323232;
+}
+
+.submit-field:focus, .popup-text:focus {
+  outline: none;
+  border: 1px solid #b59f5b;
+}
+
+.submit-button-text, .item-button-text, .popup-submit-button {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* форма поиска */
+
 .search {
   display: flex;
 }
@@ -366,6 +384,10 @@ h1 {
 .search-bar {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+.search-group {    
+  width: 100%;    
 }
 
 .search-field {
@@ -378,8 +400,8 @@ h1 {
   font-size: 13px;
   color: #000000;
   opacity: 0.54;
-  width: 225px;
-  height: 49px;
+  width: 100%;
+  height: 48px;
   background-color: #f4f7f6;
 }
 
@@ -395,16 +417,16 @@ h1 {
   background-position: left;
   background-repeat: no-repeat;
   background-position: center;
-  width: 49px;
-  height: 49px;
+  width: 48px;
+  height: 48px;
   border: 0;
-  margin-left: 0;
-  padding: 0;
 }
 
 .button:hover {
   background-color: #323232;
-}
+}  
+
+/* форма подписки */
 
 .submit-bar {
   margin-bottom: 60px;
@@ -422,50 +444,34 @@ h1 {
   text-align: center;
 }
 
-.submit-field-form {
-  display: block;
-  margin-bottom: 15px;
-}
-
 .submit-field {
+  box-sizing: border-box;
   padding-left: 20px;
-  width: 250px;
-  height: 45px;
+  width: 100%;
+  height: 48px;
   border: 0;
   background-color: #f4f7f6;
   color: #000000;
   opacity: 0.54;
 }
 
+.submit-form {
+  width: 100%;
+ }
+
+.submit-field-form {
+  display: block;
+  margin-bottom: 15px;
+}
+
 .button-submit {
   background-color: #b59f5b;
-  height: 47px;
+  height: 48px;
   border: 0;
-  width: 272px;
+  width: 100%;
 }
 
-.item-button {
-  background-color: #b59f5b;
-  height: 47px;
-  border: 0;
-  width: 140px;
-}
-
-.button-submit:hover, .item-button:hover, .popup-submit-button:hover {
-  background-color: #323232;
-}
-
-.submit-field:focus, .popup-text:focus {
-  outline: none;
-  border: 1px solid #b59f5b;
-}
-
-.submit-button-text, .item-button-text, .popup-submit-button {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold;
-  color: #ffffff;
-}
+ /* _____________________ */
 
 .tags-bar {
   margin-bottom: 60px;
@@ -559,6 +565,13 @@ sup {
     color: #0f0d0e;
     text-align: center;
     margin: 0;
+}
+
+.item-button {
+  background-color: #b59f5b;
+  height: 47px;
+  border: 0;
+  width: 140px;
 }
 
 .item-title {
@@ -797,13 +810,12 @@ sup {
   .content {  
     width: 70%;
     margin-bottom: 15%;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .main-side-bar {
     display: flex;
-    justify-content: space-between;
   }
   
   .article-content {
@@ -824,7 +836,7 @@ sup {
   }
 
   .side-bar {
-    width: 23.2%;
+    width: 35%;
   }
 
   /* шоп наши изделия десктоп */
@@ -1009,6 +1021,10 @@ sup {
     margin-top: 0;
   }
 
+  .submit-bar {
+    margin-bottom: 60px;
+  }
+
   .products-shop {
     display: flex;  
     flex-wrap: wrap;
@@ -1166,7 +1182,7 @@ sup {
   }
 
   .content {
-    width: 100%
+    width: 100%;
   }
 
   .main-side-bar {
@@ -1184,18 +1200,35 @@ sup {
     margin-top: 15px;   
   }
 
-  .article-content, .article-picture, .footer, .side-bar, .submit-form, .tags-list,
-  .search-field, .button-submit, .submit-field-form {
+  .article-content, .article-picture, .footer {
     width: 91.6%;
     margin-left: 4.2%;
     margin-right: 4.2%;
   }
 
+  .side-bar {
+    width: 91.6%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* формы мобил версия */
+
+  .search-group {
+    width: 91.6%;
+  }
+    
+  .submit-bar {
+    margin-bottom: 40px;
+  }
+
+  /* _____________________ */
+
   .tags-bar {
     margin-bottom: 44px;
   }
 
-   /* шоп мобильная версия */
+/* шоп мобильная версия */
 
    .products-shop {
     width: 91.6%;
