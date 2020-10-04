@@ -188,17 +188,19 @@
     </div>
 
     <div class="content">
-
-      <div class="main-side-bar">
+      <div class="content-wrapper">
 
         <main class="main">
           <article class="article">
-            <img class="article-picture" src="images/last-post1.jpg" alt="Человек идет по пляжу, песок, море и скалы" />
+            <div class="article-media">
+              <img class="article-picture" width="380" src="./images/last-post1.jpg"
+                alt="Человек идет по пляжу, песок, море и скалы" />
+            </div>
             <div class="article-content">
               <div class="article-header">
                 <ul class="article-topic">
-                  <li><a href="#0" class="article-topic-link"> Travel </a></li>
-                  <li><a href="#0" class="article-topic-link"> Health </a></li>
+                  <li><a href="#0" class="article-topic-link">Travel</a></li>
+                  <li><a href="#0" class="article-topic-link">Health</a></li>
                 </ul>
                 <h2 class="article-title">
                   <a href="#0" class="article-title-link">
@@ -216,7 +218,10 @@
             </div>
           </article>
           <article class="article">
-            <img class="article-picture" src="images/last-post2.jpg" alt="Девушка занимается йогой на берему моря" />
+            <div class="article-media">
+              <img class="article-picture" width="380" src="images/last-post2.jpg"
+                alt="Девушка занимается йогой на берему моря" />
+            </div>
             <div class="article-content">
               <div class="article-header">
                 <ul class="article-topic">
@@ -240,8 +245,10 @@
             </div>
           </article>
           <article class="article">
-            <img class="article-picture" src="images/last-post3.jpg"
-              alt="Люди наслаждаются музыкой на фестивале под открытым небом" />
+            <div class="article-media">
+              <img class="article-picture" width="380" src="images/last-post3.jpg"
+                alt="Люди наслаждаются музыкой на фестивале под открытым небом" />
+            </div>
             <div class="article-content">
               <div class="article-header">
                 <a href="#0" class="article-topic-link">Music</a>
@@ -266,8 +273,10 @@
             </div>
           </article>
           <article class="article">
-            <img class="article-picture" src="images/last-post4.jpg"
-              alt="Вид на обеденный стол с посудой, едой, кусочками хлеба" />
+            <div class="article-media">
+              <img class="article-picture" width="380" src="images/last-post4.jpg"
+                alt="Вид на обеденный стол с посудой, едой, кусочками хлеба" />
+            </div>
             <div class="article-content">
               <div class="article-header">
                 <ul class="article-topic">
@@ -291,7 +300,10 @@
             </div>
           </article>
           <article class="article">
-            <img class="article-picture" src="images/last-post5.jpg" alt="Подушка с принтом и надписью hang out spot" />
+            <div class="article-media">
+              <img class="article-picture" width="380" src="images/last-post5.jpg"
+                alt="Подушка с принтом и надписью hang out spot" />
+            </div>
             <div class="article-content">
               <div class="article-header">
                 <ul class="article-topic">
@@ -465,160 +477,117 @@
       </div>
 
       <div class="products-shop">
-        <h2 class="shop-title">Наши изделия</h2>
-        <div class="shop-content">
-          <article class="shop-item">
-            <div class="item-preview">
-              <picture class="item-picture">
-                <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
-                <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1199px)">
-                <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
-                <img class="item-img" src="images/shop-item-desk1.jpg" alt="Подушка с принтом и надписью hang out spot">
-              </picture>
-            </div>
-            <div class="item-box">
-              <div class="item-content">
-                <h2 class="item-title"> Подушки на диван
-                </h2>
-                <div class="item-description">
-                  <p>
-                    Набор из двух подушек с модными принтами. Видео о создании
-                    <a href="#0" class="item-description-link">здесь.</a>
-                  </p>
+        <div class="products-shop-wrapper">
+          <h2 class="shop-title">Наши изделия</h2>
+          <div class="products-shop-content">
+            <div class="products-shop-card">
+              <div class="products-shop-card-media">
+                <img class="products-shop-card-image" src="./images/shop-item-desk1.jpg"
+                  alt="Подушка с принтом и надписью hang out spot">
+              </div>
+              <div class="products-shop-card-content">
+                <h3 class="products-shop-card-title">Подушки на диван</h3>
+                <p class="products-shop-card-text">Набор из двух подушек с модными принтами. Видео о создании
+                  <a href="#0" class="products-shop-card-link">здесь</a>.</p>
+                <div class="products-shop-card-control">
+                  <div class="products-shop-card-price">
+                    <div class="products-shop-card-price-old">
+                      <span class="products-shop-card-price-value-hidden">1000</span>
+                      <span class="products-shop-card-price-rub-hidden">₽</span>
+                    </div>
+                    <div class="products-shop-card-price-new">
+                      <span class="products-shop-card-price-value-hidden">800</span>
+                      <span class="products-shop-card-price-rub-hidden">₽</span>
+                    </div>
+                  </div>
+                  <button class="products-shop-card-button">В магазин</button>
                 </div>
               </div>
-              <div class="item-footer">
-                <div class="item-prices">
-                  <span class="item-price item-price-old">
-                    <span class="item-price-value">1000</span>
-                    <span class="item-rub">₽</span>
-                  </span>
-                  <span class="item-price">
-                    <span class="item-price-value">800</span>
-                    <span class="item-rub">₽</span>
-                  </span>
-                </div>
-                <button class="item-button" type="button">
-                  <span class="item-button-text">В магазин</span>
-                </button>
+            </div>
+            <div class="products-shop-card">
+              <div class="products-shop-card-media">
+                <img class="products-shop-card-image" src="./images/shop-item-desk2.jpg"
+                  alt="Рукодельный зайчик, книжки и чашка">
               </div>
-            </div>
-          </article>
-          <article class="shop-item">
-            <div class="item-preview">
-              <picture class="item-picture">
-                <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1200px)">
-                <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1199px)">
-                <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
-                <img class="item-img" src="images/shop-item-desk2.jpg" alt="Рукодельный зайчик, книжки и чашка">
-              </picture>
-            </div>
-            <div class="item-box">
-              <div class="item-content">
-                <h2 class="item-title"> Кукла &laquoЗайчик&raquo
-                </h2>
-                <div class="item-description">
-                  <p>
-                    Интерьерная рукодельная кукла &laquoЗайчик&raquo, созданию которой посвящена
-                    <a href="#0" class="item-description-link">весенняя серия постов в блоге и несколько подкастов.</a>
-                  </p>
+              <div class="products-shop-card-content">
+                <h3 class="products-shop-card-title">Кукла &laquoЗайчик&raquo</h3>
+                <p class="products-shop-card-text">Интерьерная рукодельная кукла &laquoЗайчик&raquo, созданию которой
+                  посвящена
+                  <a href="#0" class="products-shop-card-link">весенняя серия постов в блоге и несколько
+                    подкастов</a>.</p>
+                <div class="products-shop-card-control">
+                  <div class="products-shop-card-price">3500</div>
+                  <button class="products-shop-card-button">В магазин</button>
                 </div>
               </div>
-              <div class="item-footer">
-                <div class="item-prices">
-                  <span class="item-price item-price-old">
-                    <span class="item-price-value-hidden">0</span>
-                    <span class="item-rub-hidden">₽</span>
-                  </span>
-                  <span class="item-price">
-                    <span class="item-price-value">3500</span>
-                    <span class="item-rub">₽</span>
-                  </span>
-                </div>
-                <button class="item-button" type="button">
-                  <span class="item-button-text">В магазин</span>
-                </button>
+            </div>
+            <div class="products-shop-card">
+              <div class="products-shop-card-media">
+                <img class="products-shop-card-image" src="./images/shop-item-desk3.jpg"
+                  alt="Шестиугольная рамка и ваза с сухоцветами">
               </div>
-            </div>
-          </article>
-          <article class="shop-item">
-            <div class="item-preview">
-              <picture class="item-picture">
-                <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1200px)">
-                <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1199px)">
-                <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)">
-                <img class="item-img" src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка и ваза с сухоцветами">
-              </picture>
-            </div>
-            <div class="item-box">
-              <div class="item-content">
-                <h2 class="item-title"> Шестиугольная рамка
-                </h2>
-                <div class="item-description">
-                  <p>
-                    Необычная рамка для украшения дома из видео
-                    <a href="#0" class="item-description-link">
-                      &laquoКак сделать рамку из подручных средств за 30 минут&raquo
-                    </a>
-                  </p>
+              <div class="products-shop-card-content">
+                <h3 class="products-shop-card-title">Шестиугольная рамка</h3>
+                <p class="products-shop-card-text">Необычная рамка для украшения дома из видео <a href="#0"
+                    class="products-shop-card-link"> &laquoКак сделать рамку из подручных средств за 30 минут&raquo</a>.
+                </p>
+                <div class="products-shop-card-control">
+                  <div class="products-shop-card-price">
+                    <div class="products-shop-card-price-old">
+                      <span class="products-shop-card-price-value-hidden">500</span>
+                      <span class="products-shop-card-price-rub-hidden">₽</span>
+                    </div>
+                    <div class="products-shop-card-price-new">
+                      <span class="products-shop-card-price-value-hidden">400</span>
+                      <span class="products-shop-card-price-rub-hidden">₽</span>
+                    </div>
+                  </div>
+                  <button class="products-shop-card-button">В магазин</button>
                 </div>
               </div>
-              <div class="item-footer">
-                <div class="item-prices">
-                  <span class="item-price item-price-old">
-                    <span class="item-price-value">500</span>
-                    <span class="item-rub">₽</span>
-                  </span>
-                  <span class="item-price">
-                    <span class="item-price-value">400</span>
-                    <span class="item-rub">₽</span>
-                  </span>
-                </div>
-                <button class="item-button" type="button">
-                  <span class="item-button-text">В магазин</span>
-                </button>
-              </div>
             </div>
-          </article>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
 
     <footer class="footer">
-      <address class="footer-socials">
-        <div class="widget-box">
-          <ul class="widget-socials">
-            <li class="widget-social-icon">
-              <a href="#0" class="socials-link socials-link-twitter">
-                <span class="socials-link-text">twitter</span>
-              </a>
-            </li>
-            <li class="widget-social-icon">
-              <a href="#0" class="socials-link socials-link-pinterest">
-                <span class="socials-link-text">pinterest</span>
-              </a>
-            </li>
-            <li class="widget-social-icon">
-              <a href="#0" class="socials-link socials-link-facebook">
-                <span class="socials-link-text">facebook</span>
-              </a>
-            </li>
-            <li class="widget-social-icon">
-              <a href="#0" class="socials-link socials-link-instagram">
-                <span class="socials-link-text">instagram</span>
-              </a>
-            </li>
-            <li class="widget-social-icon">
-              <a href="#0" class="socials-link socials-link-tumblr">
-                <span class="socials-link-text">tumblr</span>
-              </a>
-            </li>
-          </ul>
+      <div class="footer-wrapper">
+        <address class="footer-socials">
+          <div class="widget-box">
+            <ul class="widget-socials">
+              <li class="widget-social-icon">
+                <a href="#0" class="socials-link socials-link-twitter">
+                  <span class="socials-link-text">twitter</span>
+                </a>
+              </li>
+              <li class="widget-social-icon">
+                <a href="#0" class="socials-link socials-link-pinterest">
+                  <span class="socials-link-text">pinterest</span>
+                </a>
+              </li>
+              <li class="widget-social-icon">
+                <a href="#0" class="socials-link socials-link-facebook">
+                  <span class="socials-link-text">facebook</span>
+                </a>
+              </li>
+              <li class="widget-social-icon">
+                <a href="#0" class="socials-link socials-link-instagram">
+                  <span class="socials-link-text">instagram</span>
+                </a>
+              </li>
+              <li class="widget-social-icon">
+                <a href="#0" class="socials-link socials-link-tumblr">
+                  <span class="socials-link-text">tumblr</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </address>
+        <div class="copyrights">
+          <a href="#0" class="copyright-link">Copyright © 2009–2019 City Blog LLC</a>
         </div>
-      </address>
-      <div class="copyrights">
-        <a href="#0" class="copyright-link">Copyright © 2009–2019 City Blog LLC</a>
       </div>
     </footer>
 
