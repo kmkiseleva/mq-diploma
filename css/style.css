@@ -1030,6 +1030,10 @@ sup {
     min-width: 390px;
   }
 
+  .article-media {
+    margin-bottom: 15px;
+  }
+
   .latest-posts-title {
     margin-top: 0;
   }
@@ -1169,6 +1173,7 @@ sup {
   }
 
   .trend_box {
+    width: 92%;
     margin-left: 19px;
     margin-right: 19px;
     margin-bottom: 15px;
@@ -1184,13 +1189,16 @@ sup {
     flex-wrap: wrap;
   }
 
+  .main {
+    width: 91.6%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .article {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 35px;
-    width: 91.6%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .article-content {
