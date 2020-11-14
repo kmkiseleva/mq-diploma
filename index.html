@@ -5,6 +5,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="apple-touch-icon" sizes="180x180" href="svg\favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="svg\favicon/favicon-16x16.png">
+  <link rel="manifest" href="svg\favicon/site.webmanifest">
+  <link rel="mask-icon" href="svg\favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="svg\favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="svg\favicon/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/png" sizes="32x32" href="svg\favicon/favicon-32x32.png">
   <link href="css/style.css" rel="stylesheet" />
   <title>mq-diploma_kmkiseleva</title>
 </head>
@@ -84,9 +93,10 @@
           </div>
 
           <nav>
-            <div class="menu-bar">
+            <div class="menu-bar" id="menu-bar">
               <img class="menu-bar-img" src="svg/menu-bar.svg" alt="меню-бар" />
             </div>
+
             <div class="menu">
               <ul class="menu-list">
                 <li class="menu-list-item">
@@ -110,6 +120,16 @@
               </ul>
             </div>
           </nav>
+
+          <script>
+            let menuBar = document.getElementById('menu-bar');
+            let menu = document.querySelector('.menu');
+
+            menuBar.onclick = function () {
+                menu.style.display = "block";
+            }
+
+          </script>
 
         </div>
 
