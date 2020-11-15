@@ -73,15 +73,6 @@
       </div>
     </div>
 
-    <script>
-      const popup = document.getElementById('popup-wrap');
-      const popupClose = document.querySelector('.popup-x');
-
-      popupClose.onclick = function () {
-        popup.style.display = "none";
-      }
-    </script>
-
     <header>
       <div class="header-wrap">
         <div class="header-top">
@@ -92,12 +83,7 @@
             </a>
           </div>
 
-          <nav>
-            <div class="menu-bar" id="menu-bar">
-              <img class="menu-bar-img" src="svg/menu-bar.svg" alt="меню-бар" />
-            </div>
-
-            <div class="menu">
+          <nav class="menu">
               <ul class="menu-list">
                 <li class="menu-list-item">
                   <a href="#0" class="menu-link">Главная</a>
@@ -118,18 +104,17 @@
                   <a href="#0" class="menu-link">Контакты</a>
                 </li>
               </ul>
-            </div>
+              <div class="menu__nav-close">
+                <span class="menu__nav-close-line"></span>
+                <span class="menu__nav-close-line"></span>
+              </div>
           </nav>
 
-          <script>
-            let menuBar = document.getElementById('menu-bar');
-            let menu = document.querySelector('.menu');
-
-            menuBar.onclick = function () {
-                menu.style.display = "block";
-            }
-
-          </script>
+          <div class="menu__burger burger">
+            <span class="burger__line burger__line_first"></span>
+            <span class="burger__line burger__line_second"></span>
+            <span class="burger__line burger__line_third"></span>
+          </div>
 
         </div>
 
@@ -612,7 +597,6 @@
     </footer>
 
   </div>
-
+<script src="js/main.js"></script>
 </body>
-
 </html>

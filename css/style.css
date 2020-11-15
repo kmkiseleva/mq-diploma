@@ -166,13 +166,37 @@ body {
   margin: 10px auto 25px;
 }
 
-.menu-bar {
-  padding-top: 45px;
+.menu__burger {
+  width: 40px;
+  height: 28px;
+  position: relative;
+  display: none;
 }
 
-.menu-bar-img {
-  width: 30px;
-  height: 25px;
+.menu__burger:hover {
+  opacity: 0.75;
+}
+
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+}
+
+.burger__line_first {
+  top: 0;
+}
+
+.burger__line_second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger__line_third {
+  bottom: 0;
 }
 
 /* тренды */
@@ -583,7 +607,7 @@ sup {
   margin: 0;
 }
 
- /* шоп наши изделия */
+/* шоп наши изделия */
 
 .products-shop {
   margin-top: 60px;
@@ -921,7 +945,7 @@ sup {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-color: #666666; 
+    background-color: #666666;
     position: relative;
     height: 390px;
     margin-bottom: 50px;
@@ -970,6 +994,70 @@ sup {
 
   .menu {
     display: none;
+    padding-top: 45px;
+    padding-right: 45px;
+  }
+
+  .menu-list {
+    display: flex;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .menu-link {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .menu-link:hover {
+    text-decoration: underline;
+  }
+
+  .menu-list-item:nth-child(n + 2) {
+    margin-left: 10px;
+  }
+
+  .menu__burger {
+    display: block;
+    margin-top: 37px;
+  }
+
+  .menu_active {
+    display: block;
+  }
+
+  .menu__nav-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 37px;
+    right: 50px;
+    z-index: 11;
+  }
+
+  .menu__nav-close:hover {
+    opacity: 0.75;
+  }
+
+  .menu__nav-close-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+  }
+
+  .menu__nav-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .menu__nav-close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
   }
 
   /* тренды планшет */
@@ -1043,7 +1131,7 @@ sup {
   }
 
   /* шоп наши изделия планшет */
-  
+
   .products-shop {
     margin-top: 45px;
   }
@@ -1052,7 +1140,7 @@ sup {
     width: 90%;
     margin: auto;
   }
- 
+
   .products-shop-content {
     display: flex;
     flex-wrap: wrap;
@@ -1149,14 +1237,75 @@ sup {
     width: 270px;
   }
 
-  .menu-bar {
-    position: absolute;
-    right: 4.2%;
-    top: 0;
+  .menu {
+    display: none;
   }
 
   .menu {
-    display: none;
+    padding-right: 40px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+  }
+
+  .menu-list {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .menu-link {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .menu-link:hover {
+    text-decoration: underline;
+  }
+
+  .menu__burger {
+    display: block;
+    position: absolute;
+    top: 37px;
+    right: 15px;
+  }
+
+  .menu_active {
+    display: block;
+  }
+
+  .menu__nav-close {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+  }
+
+  .menu__nav-close:hover {
+    opacity: 0.75;
+  }
+
+  .menu__nav-close-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+  }
+
+  .menu__nav-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .menu__nav-close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
   }
 
   /* тренды мобил */
@@ -1167,7 +1316,7 @@ sup {
     padding: 0;
     justify-content: center;
   }
-  
+
   .main-trends-content {
     flex-wrap: wrap;
   }
@@ -1258,7 +1407,7 @@ sup {
   }
 }
 
-@media (max-width: 640px) and (orientation: portrait) { 
+@media (max-width: 640px) and (orientation: portrait) {
   .trend {
     width: 100%;
     min-width: 320px;
