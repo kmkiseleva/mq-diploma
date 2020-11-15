@@ -11,18 +11,25 @@ const popup = document.getElementById('popup-wrap');
 
 // бургер
 
-(function () {
-   const burgerItem = document.querySelector('.burger');
-   const menu = document.querySelector('.menu');
-   const menuCloseItem = document.querySelector('.menu__nav-close');
-   const menuLinks = document.querySelectorAll('.menu-link');
-   burgerItem.addEventListener('click', () => {
-      menu.classList.add('menu_active');
-      burgerItem.style.display = "none";   
+// (function () {
+//    const burgerItem = document.querySelector('.burger');
+//    const menu = document.querySelector('.menu');
+//    const menuCloseItem = document.querySelector('.menu__nav-close');
+//    const menuLinks = document.querySelectorAll('.menu-link');
+//    burgerItem.addEventListener('click', () => {
+//       menu.classList.add('menu_active');
+//       burgerItem.style.display = "none";
+//    });
+//    menuCloseItem.addEventListener('click', () => {
+//       menu.classList.remove('menu_active');
+//       if (window.innerWidth < 1200) {
+//          burgerItem.style.display = "block";
+//       };
+//    });
+// }());
 
-   });
-   menuCloseItem.addEventListener('click', () => {
-      menu.classList.remove('menu_active');
-      burgerItem.style.display = "block";
-   });
-}());
+// (function () {
+//    if (window.innerWidth >= 1200) {
+//       burgerItem.style.display = "none";
+//    };
+// }());
