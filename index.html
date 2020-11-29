@@ -1,520 +1,603 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Discover Amazing places in Japan</title>
-    <meta name="description" content="" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="img/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="msapplication-config" content="img/favicon/browserconfig.xml" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="wrapper">
-        <div class="header__wrapper">
-          <div class="header__logo">
-            <a href="#!" class="header__logo-link">
-              <img
-                src="img/svg/odigo-logo.svg"
-                alt="Discover Amazing places in Japan"
-              />
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="apple-touch-icon" sizes="180x180" href="svg\favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="svg\favicon/favicon-16x16.png">
+  <link rel="manifest" href="svg\favicon/site.webmanifest">
+  <link rel="mask-icon" href="svg\favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="svg\favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="svg\favicon/browserconfig.xml">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/png" sizes="32x32" href="svg\favicon/favicon-32x32.png">
+  <link href="css/style.css" rel="stylesheet" />
+  <title>mq-diploma_kmkiseleva</title>
+</head>
+
+<body id="main">
+
+  <div class="wrapper">
+
+    <div id="popup-wrap" class="popup-wrap">
+      <div class="popup">
+        <div class="popup-content">
+
+          <svg class="popup-x" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10.071 7.95L2.945.824.824 2.944l7.126 7.127-7.126 7.126 2.12 2.122 7.127-7.127 7.126 7.127 2.122-2.122-7.127-7.126 7.127-7.126L17.197.824 10.071 7.95z" />
+          </svg>
+
+          <h2 class="popup-title">Ваш фидбек</h2>
+
+          <form class="popup-form">
+            <div class=" popup-select">
+              <label> Как часто вы заходите на сайт?
+                <div class="select-menu">
+                  <select class="select-field">
+                    <option value="almost evry day" selected>Почти каждый день</option>
+                    <option value="every few days">Раз в несколько дней</option>
+                    <option value="every few weeks">Раз в несколько недель</option>
+                    <option value="several times a year">Несколько раз в год</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+
+            <div class="popup-radio">
+              <span>Вы подписаны на e-mail рассылку?</span>
+              <div class="radio-menu">
+                <label class="radio-group">
+                  <input type="radio" name="popup-radio" class="radio">
+                  <span class="radio-group-text">Да</span>
+                </label>
+                <label class="radio-group">
+                  <input type="radio" name="popup-radio" class="radio">
+                  <span class="radio-group-text">Нет</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="popup-submit">
+              <label for="popup-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте? </label>
+              <input type="text" class="popup-text" id="popup-text" placeholder="Может, больше рецептов?" />
+              <button class="popup-submit-button" type="submit">Отправить</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="header-wrap">
+
+        <div class="header-top">
+
+          <div class="header-logo-block">
+            <a href="#0" class="header-logo">
+              <img src="svg/noemi-logo.svg" alt="Логотип Noemi" />
             </a>
           </div>
 
-          <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__item">
-                <a href="#articles" class="header__link">Articles</a>
-              </li>
-              <li class="header__item">
-                <a href="#locations" class="header__link">Locations</a>
-              </li>
-              <li class="header__item">
-                <a href="#videos" class="header__link">Videos</a>
-              </li>
-              <li class="header__item">
-                <a href="#sign-in" class="header__link">Search</a>
-              </li>
-            </ul>
-            <div class="header__nav-close">
-              <span class="header__nav-close-line"></span>
-              <span class="header__nav-close-line"></span>
-            </div>
+          <nav class="menu">
+              <ul class="menu-list">
+                <li class="menu-list-item">
+                  <a href="#main" class="menu-link">Главная</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#posts" class="menu-link">Посты</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#articles" class="menu-link">Статьи</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#tags" class="menu-link">Теги</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#themes" class="menu-link">Темы</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#contacts" class="menu-link">Контакты</a>
+                </li>
+              </ul>
+              <div class="menu__nav-close">
+                <span class="menu__nav-close-line"></span>
+                <span class="menu__nav-close-line"></span>
+              </div>
           </nav>
-          <div class="header__burger burger">
+
+          <div class="menu__burger burger">
             <span class="burger__line burger__line_first"></span>
             <span class="burger__line burger__line_second"></span>
             <span class="burger__line burger__line_third"></span>
           </div>
+
         </div>
+
+        <h1>Блог о творчестве, спорте, и образе жизни</h1>
       </div>
     </header>
 
-    <main class="main">
-      <div class="intro" id="sign-in">
-        <div class="wrapper">
-          <h1 class="intro__title">Discover Amazing places in Japan</h1>
-          <p class="intro__subtitle">
-            Japan is truly a country of endless discovery. You could spend a
-            lifetime exploring this country and barely scratch its extraordinary
-            expanse. We encourage you to explore and research more on your own,
-            even if it means getting lost along the way. To help you get back on
-            the right track we’ve rounded up the best cities in Japan.
-          </p>
-          <form class="search-form">
-            <fieldset class="search-form__wrap">
-              <p class="search-form__info">
-                <input
-                  type="text"
-                  name="user-like-to-do"
-                  class="search-form__field"
-                  placeholder="What would you like to do?"
-                />
-                <input
-                  type="text"
-                  name="user-like-to-go"
-                  class="search-form__field"
-                  placeholder="Where would you like to go?"
-                />
-                <button type="submit" class="search-form__submit">
-                  search
-                </button>
-              </p>
-            </fieldset>
-          </form>
-        </div>
-      </div>
-
-      <section class="benefits">
-        <div class="benefits__wrap">
-          <h2 class="benefits__title">Benefits of Odigo</h2>
-          <div class="benefits__cards">
-            <div class="benefits__card">
-              <div class="benefits__card-pic">
-                <img
-                  src="img/svg/pagoda-icon.svg"
-                  alt="Welcome to Odigo!"
-                  class="benefits__card-thumb"
-                />
-              </div>
-              <h3 class="benefits__card-title">Welcome to Odigo!</h3>
-              <p class="benefits__card-desc">
-                Japan is truly a country of endless discovery.
-              </p>
-              <a href="#!" class="benefits__card-more">Learn more</a>
-            </div>
-            <div class="benefits__card">
-              <div class="benefits__card-pic">
-                <img
-                  src="img/svg/person-icon.svg"
-                  alt="Your Personal Japan Guide"
-                  class="benefits__card-thumb"
-                />
-              </div>
-              <h3 class="benefits__card-title">Your Personal Japan Guide</h3>
-              <p class="benefits__card-desc">
-                To help you get back on the right track we’ve rounded up the
-                best cities in Japan.
-              </p>
-              <a href="#!" class="benefits__card-more">Learn more</a>
-            </div>
-            <div class="benefits__card">
-              <div class="benefits__card-pic">
-                <img
-                  src="img/svg/building-icon.svg"
-                  alt="Promoting Local Businesses"
-                  class="benefits__card-thumb"
-                />
-              </div>
-              <h3 class="benefits__card-title">Promoting Local Businesses</h3>
-              <p class="benefits__card-desc">
-                We encourage you to explore and research more on your own, even
-                if it means getting lost along the way.
-              </p>
-              <a href="#!" class="benefits__card-more">Learn more</a>
-            </div>
+    <div class="main-trends">
+      <h2 class="trends-title">Сейчас в тренде</h2>
+      <div class="main-trends-content">
+        <article class="trend">
+          <div class="trend_previewbox">
+            <img class="trend_preview" src="images/trend1.jpg" alt="рассада в
+          горшочках" />
           </div>
-        </div>
-      </section>
-
-      <section class="places">
-        <div class="wrapper-full">
-          <div class="places__caption">
-            <h2 class="places__title section-title">
-              Get inspired for your next trip
+          <div class="trend_box">
+            <ul class="trend-topic">
+              <li><a href="#0" class="trend-topic-link"> Lifestyle </a></li>
+              <li><a href="#0" class="trend-topic-link"> Interior </a></li>
+            </ul>
+            <h2 class="trend-title">
+              <a href="#0" class="trend-title-link">
+                Сейчас в тренде: сад на подоконнике</a>
             </h2>
-            <a href="#!" class="places__view-all">View all</a>
           </div>
-
-          <div class="places__cards">
-            <div class="places__card places__card_size_lg">
-              <img
-                src="img/place-1-min.jpg"
-                alt="Mount Fuji"
-                class="places__card-pic places__card-pic_size_lg"
-              />
-              <h3 class="places__card-title">Mount Fuji</h3>
-              <a href="#!" class="places__card-link"></a>
-            </div>
-
-            <div class="places__card places__card_size_lg">
-              <img
-                src="img/place-2-min.jpg"
-                alt="Kyoto"
-                class="places__card-pic places__card-pic_size_lg"
-              />
-              <h3 class="places__card-title">Kyoto</h3>
-              <a href="#!" class="places__card-link"></a>
-            </div>
-
-            <div class="places__card places__card_size_sm">
-              <img
-                src="img/place-3-min.jpg"
-                alt="Tokyo"
-                class="places__card-pic places__card-pic_size_sm"
-              />
-              <h3 class="places__card-title">Tokyo</h3>
-              <a href="#!" class="places__card-link"></a>
-            </div>
-
-            <div class="places__card places__card_size_sm">
-              <img
-                src="img/place-4-min.jpg"
-                alt="Niigata"
-                class="places__card-pic places__card-pic_size_sm"
-              />
-              <h3 class="places__card-title">Niigata</h3>
-              <a href="#!" class="places__card-link"></a>
-            </div>
-
-            <div class="places__card places__card_size_sm">
-              <img
-                src="img/place-5-min.jpg"
-                alt="Sapporo"
-                class="places__card-pic places__card-pic_size_sm"
-              />
-              <h3 class="places__card-title">Sapporo</h3>
-              <a href="#!" class="places__card-link"></a>
+        </article>
+        <article class="trend">
+          <div class="trend_previewbox">
+            <img class="trend_preview" src="images/trend2.jpg" alt="разные виды сыров крупным планом" />
+          </div>
+          <div class="trend_box">
+            <div class="trend-header">
+              <a href="#0" class="trend-topic-link"> Food </a></li>
+              <h2 class="trend-title">
+                <a href="#0" class="trend-title-link">
+                  Сыры на красивых картинках из интернета: какие они на вкус?</a>
+              </h2>
             </div>
           </div>
-        </div>
-      </section>
-
-      <div class="tours" id="articles">
-        <div class="wrapper-full">
-          <div class="tours__tour tour">
-            <div class="tour__pic">
-              <img
-                src="img/tour-1-min.jpg"
-                alt="Prefecture in Focus: Tottori"
-                class="tour__thumb"
-              />
+        </article>
+        <article class="trend">
+          <div class="trend_previewbox">
+            <img class="trend_preview" src="images/trend3.jpg" alt="турист стоит и смотрит на горы" />
+          </div>
+          <div class="trend_box">
+            <div class="trend-header">
+              <ul class="trend-topic">
+                <li><a href="#0" class="trend-topic-link"> Lifestyle </a></li>
+                <li><a href="#0" class="trend-topic-link"> Travel </a></li>
+              </ul>
+              <h2 class="trend-title">
+                <a href="#0" class="trend-title-link">
+                  Собираемся в первый поход в горы</a>
+              </h2>
             </div>
-            <div class="tour__info">
-              <h3 class="tour__title">Prefecture in Focus: Tottori</h3>
-              <p class="tour__desc">
-                The capital city of Tottori Prefecture in the Chugoku region of
-                Japan. Within Japan the city is best known for its sand dunes
-                which are a popular tourist attraction, drawing visitors from
-                outside the prefecture. Most of Tottori is located in the
-                western part of the San'in Kaigan Geopark.
+          </div>
+        </article>
+        <article class="trend">
+          <div class="trend_previewbox">
+            <img class="trend_preview" src="images/trend4.jpg" alt="лимоны крупным планом" />
+          </div>
+          <div class="trend_box">
+            <div class="trend-header">
+              <ul class="trend-topic">
+                <li><a href="#0" class="trend-topic-link"> Food </a></li>
+                <li><a href="#0" class="trend-topic-link"> Health </a></li>
+              </ul>
+              <h2 class="trend-title">
+                <a href="#0" class="trend-title-link">
+                  Сейчас в тренде: сколько витамина с в лимонах?</a>
+              </h2>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content-wrapper">
+
+        <main class="main" id="articles">
+          <article class="article">
+            <div class="article-media">
+              <img class="article-picture" width="380" src="./images/last-post1.jpg"
+                alt="Человек идет по пляжу, песок, море и скалы" />
+            </div>
+            <div class="article-content">
+              <div class="article-header">
+                <ul class="article-topic">
+                  <li><a href="#0" class="article-topic-link">Travel</a></li>
+                  <li><a href="#0" class="article-topic-link">Health</a></li>
+                </ul>
+                <h2 class="article-title">
+                  <a href="#0" class="article-title-link">
+                    10 мест, ради которых стоит проснуться на рассвете</a>
+                </h2>
+                <div class="article-date-author">
+                  <time class="article-post-date" datetime="2019-06-10">10 июня 2019</time>
+                  <h4 class="article-author">Неизвестный автор</h4>
+                </div>
+              </div>
+              <p class="article-text">
+                Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел,
+                запущены фонтаны города… Музеи еще закрыты. Что посмотреть?
               </p>
-              <a href="#!" class="tour__more">View Neighborhood</a>
             </div>
+          </article>
+          <article class="article">
+            <div class="article-media">
+              <img class="article-picture" width="380" src="images/last-post2.jpg"
+                alt="Девушка занимается йогой на берему моря" />
+            </div>
+            <div class="article-content">
+              <div class="article-header">
+                <ul class="article-topic">
+                  <li><a href="#0" class="article-topic-link">Health</a></li>
+                  <li><a href="#0" class="article-topic-link">Lifestyle</a></li>
+                </ul>
+                <h2 class="article-title">
+                  <a href="#0" class="article-title-link">
+                    Йога для начинающих в домашних условиях
+                  </a>
+                </h2>
+                <div class="article-date-author">
+                  <time class="article-post-date" datetime="2019-06-10">10 июня 2019</time>
+                  <h4 class="article-author">Неизвестный автор</h4>
+                </div>
+              </div>
+              <p class="article-text">
+                Расскажем, какие упражнения выбрать и как сделать коврик для
+                занятий йогой из того, что можно найти в шкафу.
+              </p>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-media">
+              <img class="article-picture" width="380" src="images/last-post3.jpg"
+                alt="Люди наслаждаются музыкой на фестивале под открытым небом" />
+            </div>
+            <div class="article-content">
+              <div class="article-header">
+                <a href="#0" class="article-topic-link">Music</a>
+                <h2 class="article-title">
+                  <a href="#0" class="article-title-link">
+                    Лучшие музыкальные фестивали этого лета
+                  </a>
+                </h2>
+                <div class="article-date-author">
+                  <time class="article-post-date" datetime="2019-06-10">10 июня 2019</time>
+                  <h4 class="article-author">Неизвестный автор</h4>
+                </div>
+              </div>
+
+              <p class="article-text">
+                Лето на носу, а с ним и музыкальные фестивали. На каком же из
+                них вы разобьёте свою палатку?
+              </p>
+              <p class="article-text">
+                Мы составили список лучших летних фестивалей по всему миру.
+              </p>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-media">
+              <img class="article-picture" width="380" src="images/last-post4.jpg"
+                alt="Вид на обеденный стол с посудой, едой, кусочками хлеба" />
+            </div>
+            <div class="article-content">
+              <div class="article-header">
+                <ul class="article-topic">
+                  <li><a href="#0" class="article-topic-link">Lifestyle</a></li>
+                  <li><a href="#0" class="article-topic-link">Food</a></li>
+                </ul>
+                <h2 class="article-title">
+                  <a href="#0" class="article-title-link">
+                    Наукоёмкий подход к кулинарии
+                  </a>
+                </h2>
+                <div class="article-date-author">
+                  <time class="article-post-date" datetime="2019-06-10">10 июня 2019</time>
+                  <h4 class="article-author">Неизвестный автор</h4>
+                </div>
+              </div>
+              <p class="article-text">
+                Узнаем основы проектирования новых пищевых и около-пищевых
+                опытов, вскроем физику, химию и микробиологию еды.
+              </p>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-media">
+              <img class="article-picture" width="380" src="images/last-post5.jpg"
+                alt="Подушка с принтом и надписью hang out spot" />
+            </div>
+            <div class="article-content">
+              <div class="article-header">
+                <ul class="article-topic">
+                  <li><a href="#0" class="article-topic-link">Lifestyle</a></li>
+                  <li><a href="#0" class="article-topic-link">Interior</a></li>
+                  <li><a href="#0" class="article-topic-link">Art</a></li>
+                </ul>
+                <h2 class="article-title">
+                  <a href="#0" class="article-title-link">
+                    Делаем модные принты на подушках для интерьера
+                  </a>
+                </h2>
+                <div class="article-date-author">
+                  <time class="article-post-date" datetime="2019-06-10">10 июня 2019</time>
+                  <h4 class="article-author">Неизвестный автор</h4>
+                </div>
+              </div>
+              <p class="article-text">
+                Подушки для дивана целесообразнее заказать в съемных чехлах на
+                молнии, если потребуется чистка подушек, проще снять чехлы, чем
+                везти подушку в химчистку.
+              </p>
+            </div>
+          </article>
+        </main>
+
+        <aside class="side-bar" id="posts">
+
+          <div class="latest-posts">
+            <section class="latest-posts-section">
+              <h2 class="latest-posts-title">Новые посты</h2>
+
+              <div class="post-list">
+                <article class="last-post-article">
+                  <img class="last-post-picture" src="images/2.jpg" alt="Человек идет по пляжу, песок, море и скалы" />
+                  <div class="last-post-header">
+                    <time class="last-post-date" datetime="2019-06-14">14 июня 2019</time>
+                    <h3>
+                      <a href="#0" class="last-post-title-link">10 мест, ради которых стоит проснуться</a>
+                    </h3>
+                  </div>
+                </article>
+                <article class="last-post-article">
+                  <img class="last-post-picture" src="images/151.jpg" alt="Девушка занимается йогой на берему моря" />
+                  <div class="last-post-header">
+                    <time class="last-post-date" datetime="2019-06-14">14 июня 2019</time>
+                    <h3>
+                      <a href="#0" class="last-post-title-link">Йога для домашних</a>
+                    </h3>
+                  </div>
+                </article>
+                <article class="last-post-article">
+                  <img class="last-post-picture" src="images/45.jpg" alt="Интерьер с креслом и фортепиано" />
+                  <div class="last-post-header">
+                    <time class="last-post-date" datetime="2019-06-14">14 июня 2019</time>
+                    <h3>
+                      <a href="#0" class="last-post-title-link">Как мы превратили классное место в балкон</a>
+                    </h3>
+                  </div>
+                </article>
+                <article class="last-post-article">
+                  <img class="last-post-picture" src="images/501.jpg"
+                    alt="Вид на обеденный стол с посудой, едой, кусочками хлеба" />
+                  <div class="last-post-header">
+                    <time class="last-post-date" datetime="2019-06-14">14 июня 2019</time>
+                    <h3>
+                      <a href="#0" class="last-post-title-link">Кулинарный подход к науке</a>
+                    </h3>
+                  </div>
+                </article>
+                <article class="last-post-article">
+                  <img class="last-post-picture" src="images/7.jpg"
+                    alt="Три девушки с длинными волосами стоят спиной в ряд" />
+                  <div class="last-post-header">
+                    <time class="last-post-date" datetime="2019-06-14">14 июня 2019</time>
+                    <h3>
+                      <a href="#0" class="last-post-title-link">Лучшие прически для распущенных волос</a>
+                    </h3>
+                  </div>
+                </article>
+              </div>
+            </section>
           </div>
 
-          <div class="tours__tour tour">
-            <div class="tour__info">
-              <h3 class="tour__title">
-                Featured Neighborhood: Kyoto’s Arashiyama
-              </h3>
-              <p class="tour__desc">
-                Arashiyama is a pleasant, touristy district in the western
-                outskirts of Kyoto. It is particularly popular during the cherry
-                blossom and fall color seasons.
-              </p>
-              <a href="#!" class="tour__more">View Prefecture</a>
-            </div>
-            <div class="tour__pic tour__pic_mob-first">
-              <img
-                src="img/tour-2-min.jpg"
-                alt="Featured Neighborhood: Kyoto’s Arashiyama"
-                class="tour__thumb"
-              />
-            </div>
+          <div class="search-bar">
+            <form class="search">
+              <label class="search-group">
+                <input class="search-field" name="query" placeholder="Найти..." required />
+              </label>
+              <button class="button"></button>
+            </form>
           </div>
-        </div>
+
+          <div class="submit-bar">
+            <h2 class="submit-title">Рассылка</h2>
+
+            <form class="submit-form">
+              <label class="submit-field-form">
+                <input type="email" class="submit-field" placeholder="Ваш email-адрес" required />
+              </label>
+              <button class="button-submit" type="submit">
+                <span class="submit-button-text">Подписаться</span>
+              </button>
+            </form>
+          </div>
+
+          <div class="tags-bar" id="tags">
+            <h2 class="tags-title">Теги</h2>
+
+            <ul class="tags-list">
+              <li class="tag-link-block">
+                <a href="#0" class="tags-links">Fashion</a>
+              </li>
+              <li class="tag-link-block">
+                <a href="#0" class="tags-links">Music</a>
+              </li>
+              <li class="tag-link-block">
+                <a href="#0" class="tags-links">Lifestyle</a>
+              </li>
+              <li class="tag-link-block">
+                <a href="#0" class="tags-links">Art</a>
+              </li>
+              <li class="tag-link-block">
+                <a href="#0" class="tags-links">Interior</a>
+              </li>
+              <li class="tag-link-block">
+                <a href="#0" class="tags-links">Travel</a>
+              </li>
+              <li class="tag-link-block">
+                <a href="#0" class="tags-links">Food</a>
+              </li>
+              <li class="tag-link-block">
+                <a href="#0" class="tags-links">Health</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="themes-bar" id="themes">
+            <h2 class="themes-title">Темы</h2>
+
+            <ul class="themes-list">
+              <li class="themes-link-block">
+                <a href="#0" class="themes-links">Красота</a>
+                <sup>12</sup>
+              </li>
+              <li class="themes-link-block">
+                <a href="#0" class="themes-links">Здоровье</a>
+                <sup>4</sup>
+              </li>
+              <li class="themes-link-block">
+                <a href="#0" class="themes-links">Образ жизни</a>
+                <sup>145</sup>
+              </li>
+              <li class="themes-link-block">
+                <a href="#0" class="themes-links">Музыка</a>
+                <sup>28</sup>
+              </li>
+              <li class="themes-link-block">
+                <a href="#0" class="themes-links">Спорт</a>
+                <sup>62</sup>
+              </li>
+              <li class="themes-link-block">
+                <a href="#0" class="themes-links">Йога</a>
+                <sup>8</sup>
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+
       </div>
 
-      <section class="top" id="locations">
-        <div class="wrapper-full">
-          <h2 class="top__title section-title">Today top places to visit</h2>
-
-          <div class="top__cards">
-            <div class="top__card">
-              <div class="top__card-pic">
-                <img
-                  src="img/top-1-min.jpg"
-                  alt="Nagoya"
-                  class="top__card-thumb"
-                />
-                <div class="top__card-stats">
-                  <h3 class="top__card-title">Nagoya</h3>
-                  <div class="top__card-likes">
-                    <span class="top__card-likes-value">221</span>
+      <div class="products-shop">
+        <div class="products-shop-wrapper">
+          <h2 class="shop-title">Наши изделия</h2>
+          <div class="products-shop-content">
+            <div class="products-shop-card">
+              <div class="products-shop-card-media">
+                <img class="products-shop-card-image" src="./images/shop-item-desk1.jpg"
+                  alt="Подушка с принтом и надписью hang out spot">
+              </div>
+              <div class="products-shop-card-content">
+                <h3 class="products-shop-card-title">Подушки на диван</h3>
+                <p class="products-shop-card-text">Набор из двух подушек с модными принтами. Видео о создании
+                  <a href="#0" class="products-shop-card-link">здесь</a>.</p>
+                <div class="products-shop-card-control">
+                  <div class="products-shop-card-price">
+                    <div class="products-shop-card-price-old">
+                      <span class="products-shop-card-price-value-hidden">1000</span>
+                      <span class="products-shop-card-price-rub-hidden">₽</span>
+                    </div>
+                    <div class="products-shop-card-price-new">
+                      <span class="products-shop-card-price-value-hidden">800</span>
+                      <span class="products-shop-card-price-rub-hidden">₽</span>
+                    </div>
                   </div>
-                  <div class="top__card-comments">
-                    <span class="top__card-comments-value">50</span>
-                  </div>
+                  <button class="products-shop-card-button">В магазин</button>
                 </div>
               </div>
-              <p class="top__card-desc">
-                The largest city in the Chubu region of Japan. It is Japan's
-                fourth-largest incorporated city and the third most populous
-                urban area.
-              </p>
-              <a href="#!" class="top__card-more">See more</a>
             </div>
-            <div class="top__card">
-              <div class="top__card-pic">
-                <img
-                  src="img/top-2-min.jpg"
-                  alt="Niigata"
-                  class="top__card-thumb"
-                />
-                <div class="top__card-stats">
-                  <h3 class="top__card-title">Niigata</h3>
-                  <div class="top__card-likes">
-                    <span class="top__card-likes-value">150</span>
-                  </div>
-                  <div class="top__card-comments">
-                    <span class="top__card-comments-value">20</span>
-                  </div>
+            <div class="products-shop-card">
+              <div class="products-shop-card-media">
+                <img class="products-shop-card-image" src="./images/shop-item-desk2.jpg"
+                  alt="Рукодельный зайчик, книжки и чашка">
+              </div>
+              <div class="products-shop-card-content">
+                <h3 class="products-shop-card-title">Кукла &laquoЗайчик&raquo</h3>
+                <p class="products-shop-card-text">Интерьерная рукодельная кукла &laquoЗайчик&raquo, созданию которой
+                  посвящена
+                  <a href="#0" class="products-shop-card-link">весенняя серия постов в блоге и несколько
+                    подкастов</a>.</p>
+                <div class="products-shop-card-control">
+                  <div class="products-shop-card-price">3500</div>
+                  <button class="products-shop-card-button">В магазин</button>
                 </div>
               </div>
-              <p class="top__card-desc">
-                The capital and the most populous city of Niigata Prefecture
-                located in the Chubu region of Japan. It is the largest city on
-                the west coast of Honshu, and the second largest city in Chubu
-                region after Nagoya. It faces the Sea of Japan and Sado Island.
-              </p>
-              <a href="#!" class="top__card-more">See more</a>
             </div>
-            <div class="top__card">
-              <div class="top__card-pic">
-                <img
-                  src="img/top-3-min.jpg"
-                  alt="Osaka"
-                  class="top__card-thumb"
-                />
-                <div class="top__card-stats">
-                  <h3 class="top__card-title">Osaka</h3>
-                  <div class="top__card-likes">
-                    <span class="top__card-likes-value">205</span>
+            <div class="products-shop-card">
+              <div class="products-shop-card-media">
+                <img class="products-shop-card-image" src="./images/shop-item-desk3.jpg"
+                  alt="Шестиугольная рамка и ваза с сухоцветами">
+              </div>
+              <div class="products-shop-card-content">
+                <h3 class="products-shop-card-title">Шестиугольная рамка</h3>
+                <p class="products-shop-card-text">Необычная рамка для украшения дома из видео <a href="#0"
+                    class="products-shop-card-link"> &laquoКак сделать рамку из подручных средств за 30 минут&raquo</a>.
+                </p>
+                <div class="products-shop-card-control">
+                  <div class="products-shop-card-price">
+                    <div class="products-shop-card-price-old">
+                      <span class="products-shop-card-price-value-hidden">500</span>
+                      <span class="products-shop-card-price-rub-hidden">₽</span>
+                    </div>
+                    <div class="products-shop-card-price-new">
+                      <span class="products-shop-card-price-value-hidden">400</span>
+                      <span class="products-shop-card-price-rub-hidden">₽</span>
+                    </div>
                   </div>
-                  <div class="top__card-comments">
-                    <span class="top__card-comments-value">65</span>
-                  </div>
+                  <button class="products-shop-card-button">В магазин</button>
                 </div>
               </div>
-              <p class="top__card-desc">
-                The capital city of Osaka Prefecture and the largest component
-                of the Keihanshin Metropolitan Area, the second largest
-                metropolitan area in Japan and among the largest in the world
-                with more than 20 million inhabitants.
-              </p>
-              <a href="#!" class="top__card-more">See more</a>
-            </div>
-            <div class="top__card">
-              <div class="top__card-pic">
-                <img
-                  src="img/top-4-min.jpg"
-                  alt="Saitama"
-                  class="top__card-thumb"
-                />
-                <div class="top__card-stats">
-                  <h3 class="top__card-title">Saitama</h3>
-                  <div class="top__card-likes">
-                    <span class="top__card-likes-value">231</span>
-                  </div>
-                  <div class="top__card-comments">
-                    <span class="top__card-comments-value">75</span>
-                  </div>
-                </div>
-              </div>
-              <p class="top__card-desc">
-                The capital and the most populous city of Saitama Prefecture,
-                Japan. Its area incorporates the former cities of Urawa, Omiya,
-                Yono and Iwatsuki. It is a city designated by government
-                ordinance.
-              </p>
-              <a href="#!" class="top__card-more">See more</a>
-            </div>
-            <div class="top__card">
-              <div class="top__card-pic">
-                <img
-                  src="img/top-5-min.jpg"
-                  alt="Ueno"
-                  class="top__card-thumb"
-                />
-                <div class="top__card-stats">
-                  <h3 class="top__card-title">Ueno</h3>
-                  <div class="top__card-likes">
-                    <span class="top__card-likes-value">145</span>
-                  </div>
-                  <div class="top__card-comments">
-                    <span class="top__card-comments-value">80</span>
-                  </div>
-                </div>
-              </div>
-              <p class="top__card-desc">
-                It is a district in Tokyo's Taito Ward, best known as the home
-                of Ueno Park. Ueno is also home to some of Tokyo's finest
-                cultural sites, including the Tokyo National Museum, the
-                National Museum of Western Art, and the National Museum of
-                Nature and Science, as well as a major public concert hall.
-              </p>
-              <a href="#!" class="top__card-more">See more</a>
-            </div>
-            <div class="top__card">
-              <div class="top__card-pic">
-                <img
-                  src="img/top-6-min.jpg"
-                  alt="Shibuya"
-                  class="top__card-thumb"
-                />
-                <div class="top__card-stats">
-                  <h3 class="top__card-title">Shibuya</h3>
-                  <div class="top__card-likes">
-                    <span class="top__card-likes-value">120</span>
-                  </div>
-                  <div class="top__card-comments">
-                    <span class="top__card-comments-value">35</span>
-                  </div>
-                </div>
-              </div>
-              <p class="top__card-desc">
-                It is a special ward in Tokyo, Japan. A major commercial and
-                business centre, it houses the two busiest railway stations in
-                the world, Shinjuku Station (southern half) and Shibuya Station.
-              </p>
-              <a href="#!" class="top__card-more">See more</a>
             </div>
           </div>
         </div>
-      </section>
 
-      <div class="videos" id="videos">
-        <div class="videos__wrapper">
-          <div class="video__item"></div>
-          <iframe
-            class="video__element"
-            src="https://www.youtube.com/embed/WLIv7HnZ_fE"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
       </div>
-    </main>
+    </div>
 
-    <footer class="footer">
-      <div class="wrapper">
-        <div class="footer__item">
-          <div class="footer__logo">
-            <a href="" class="footer__logo-link">
-              <img
-                src="img/svg/odigo-logo-footer.svg"
-                alt="odigo-logo-footer"
-                class="footer__logo-pic"
-              />
-            </a>
+    <footer class="footer" id="contacts">
+      <div class="footer-wrapper">
+        <address class="footer-socials">
+          <div class="widget-box">
+            <ul class="widget-socials">
+              <li class="widget-social-icon">
+                <a href="#0" class="socials-link socials-link-twitter">
+                  <span class="socials-link-text">twitter</span>
+                </a>
+              </li>
+              <li class="widget-social-icon">
+                <a href="#0" class="socials-link socials-link-pinterest">
+                  <span class="socials-link-text">pinterest</span>
+                </a>
+              </li>
+              <li class="widget-social-icon">
+                <a href="#0" class="socials-link socials-link-facebook">
+                  <span class="socials-link-text">facebook</span>
+                </a>
+              </li>
+              <li class="widget-social-icon">
+                <a href="#0" class="socials-link socials-link-instagram">
+                  <span class="socials-link-text">instagram</span>
+                </a>
+              </li>
+              <li class="widget-social-icon">
+                <a href="#0" class="socials-link socials-link-tumblr">
+                  <span class="socials-link-text">tumblr</span>
+                </a>
+              </li>
+            </ul>
           </div>
-          <nav class="footer__nav">
-            <ul class="footer__menu">
-              <li class="footer__menu-item">
-                <h3 class="footer__menu-title">Company</h3>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">About</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">Team</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">Careers</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">Privacy Policy</a>
-              </li>
-            </ul>
-
-            <ul class="footer__menu">
-              <li class="footer__menu-item">
-                <h3 class="footer__menu-title">Locations</h3>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">Tokyo</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">Kyoto</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">Osaka</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">Niigata</a>
-              </li>
-            </ul>
-
-            <ul class="footer__menu">
-              <li class="footer__menu-item">
-                <h3 class="footer__menu-title">Social Media</h3>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">Facebook</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">Twitter</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">Instagram</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">Youtube</a>
-              </li>
-            </ul>
-          </nav>
+        </address>
+        <div class="copyrights">
+          <a href="#0" class="copyright-link">Copyright © 2009–2019 City Blog LLC</a>
         </div>
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
-  </body>
+  </div>
+<script src="js/main.js"></script>
+</body>
 </html>
