@@ -1257,10 +1257,10 @@ sup {
     left: 0;
     background-color: #ffffff;
     z-index: 10;
-    padding: 75px;
     transform: translateX(100%);
     transition: 0.2s all linear;
     padding-left: 30px;
+    padding-top: 30px;
   }
 
   .menu-list {
@@ -1276,7 +1276,7 @@ sup {
   .menu-list-item {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
   }
 
   .menu-list-item:last-child {
@@ -1287,8 +1287,8 @@ sup {
     text-decoration: none;
     color: #b59f5b;
     text-transform: uppercase;
-    font-size: 42px;
-    line-height: 48px;
+    font-size: 30px;
+    line-height: 25px;
   }
 
   .menu-link:hover {
@@ -1300,7 +1300,7 @@ sup {
     height: 40px;
     position: absolute;
     top: 37px;
-    right: 110px;
+    right: 50px;
     z-index: 11;
   }
 
