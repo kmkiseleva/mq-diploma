@@ -15,7 +15,7 @@ const popup = document.getElementById('popup-wrap');
   const burgerItem = document.querySelector('.burger');
   const menu = document.querySelector('.menu');
   const menuCloseItem = document.querySelector('.menu__nav-close');
-  const menuLinks = document.querySelectorAll('.menu__link');
+  const menuLinks = document.querySelectorAll('.menu-link');
   const trends = document.querySelector('.main-trends');
   const content = document.querySelector('.content');
   burgerItem.addEventListener('click', () => {
@@ -34,6 +34,8 @@ const popup = document.getElementById('popup-wrap');
      for (let i = 0; i < menuLinks.length; i++) {
         menuLinks[i].addEventListener('click', () => {
            menu.classList.remove('menu_active');
+           content.style.display = "block";
+           trends.style.display = "block";
         })
      }
   };
